@@ -2,15 +2,20 @@
 #write the moves first then combine them into a menu
 #combine the moves? Think we can make it more player friendly? was looking at Tkinter. You know how to use it? sort of.
 #ive done some stuff in it before. nothing too fancy though.ok. lets keep it basic then. lets add GUI after it works
+
+#imports random Class for random number generation
 import random
+
+#initializes player and computer health
 playerHealth = 100
 computerHealth = 100
+
 #moves
 small= random.randint(18,25)
 big = random.randint(10,35)
 heal = random.randint(10,20)
 
-
+#computer move
 def computerMove():
     comMove = random.randint(1,3)
     if comMove == 1:
